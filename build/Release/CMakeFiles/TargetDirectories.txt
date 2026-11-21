@@ -1,0 +1,11 @@
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/CMakeFiles/EPI_cnt5_2026.11.21.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/CMakeFiles/edit_cache.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/CMakeFiles/rebuild_cache.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/CMakeFiles/edit_cache.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/CMakeFiles/rebuild_cache.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/Source/CMakeFiles/CMSISDSP.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/Source/CMakeFiles/edit_cache.dir
+C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/Source/CMakeFiles/rebuild_cache.dir
