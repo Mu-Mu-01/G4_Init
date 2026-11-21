@@ -130,7 +130,7 @@ int main(void)
   MX_TIM8_Init();
   MX_DAC1_Init();
   /* USER CODE BEGIN 2 */
-  /* 库的 signal_valid 表示输入幅度有效。缺少相位锁定判据时，指示灯保持初始低电平。 */
+  /* 启动和捕获期间保持灭灯。 */
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 
   /* 将已初始化的板级信号端口传给 App，并按参考例程的顺序设置输出和闭环。 */
@@ -172,6 +172,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     DPLL_App_ProcessRuntimeControl(&g_dpll_runtime_control);
+    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, DPLL_App_IsLocked() ? GPIO_PIN_RESET : GPIO_PIN_SET);
   }
   /* USER CODE END 3 */
 }

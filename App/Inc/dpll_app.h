@@ -71,6 +71,8 @@ void DPLL_App_ProcessRuntimeControl(DPLL_App_RuntimeControl *control);
  * 并将控制权交还给现有的手动 NCO API。 */
 bool DPLL_App_Enable(bool enable);
 bool DPLL_App_IsEnabled(void);
+/* 主循环读取最新锁定判定，启动和失锁时均返回 false。 */
+bool DPLL_App_IsLocked(void);
 
 /* 示波器相位校准模型：
  *   measured_phase_deg = intercept_deg +

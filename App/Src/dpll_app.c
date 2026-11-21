@@ -63,6 +63,44 @@ static bool app_initialized;                    /* 应用是否已初始化 */
 static bool app_started;                        /* 应用是否已启动（外设运行中） */
 static bool app_enabled;                        /* 闭环是否已使能 */
 
+/* 捕获需要连续四次完整鉴相，退出采用较宽的相位门限以抑制灯闪烁。 */
+#define LOCK_ACQUIRE_WINDOWS 4U
+#define LOCK_ACQUIRE_RAD 0.08726646f /* 捕获误差上限，5°。 */
+#define LOCK_RELEASE_RAD 0.26179939f /* 保持误差上限，15°。 */
+static volatile uint8_t lock_windows; /* 连续合格窗口数，达到捕获次数即锁定。 */
+
+/**
+ * @brief  查询当前闭环相对设定相位的锁定状态。
+ * @param  无。
+ * @retval 已确认锁定返回 true，启动、捕获或失锁时返回 false。
+ * @note   主循环可随时读取；计数仅随新鉴相结果推进。
+ */
+bool DPLL_App_IsLocked(void)
+{
+    return lock_windows == LOCK_ACQUIRE_WINDOWS;
+}
+
+/**
+ * @brief  根据本次有效控制更新和相位误差刷新锁定计数。
+ * @param  snapshot 当前 PI 鉴相窗口的结果。
+ * @param  applied 本次频率控制字已成功写入闭环输出。
+ * @retval 无。
+ * @note   每个完成或失败的鉴相窗口调用一次，在临界区内与流错误复位互斥。
+ */
+static void DPLL_App_UpdateLock(const DPLL_PI_Snapshot *snapshot, bool applied)
+{
+    const float error = fabsf(snapshot->phase_error_rad); /* 相对目标相位的绝对误差，rad。 */
+    if (!applied || !snapshot->signal_valid || snapshot->saturated ||
+        !isfinite(error) || error > LOCK_RELEASE_RAD)
+    {
+        lock_windows = 0U;
+    }
+    else if (lock_windows < LOCK_ACQUIRE_WINDOWS)
+    {
+        lock_windows = error <= LOCK_ACQUIRE_RAD ? lock_windows + 1U : 0U;
+    }
+}
+
 /**
  * @brief  清空 IQ 累积器并恢复当前采样配置对应的观测窗口长度。
  * @param  无。
@@ -314,6 +352,7 @@ bool DPLL_App_Init(const DPLL_App_Config *config)
     phase_calibration.slope_deg_per_khz = 0.0f;
     locked_phase_difference_deg = 0.0f;
     app_enabled = false;
+    lock_windows = 0U;
     app_started = false;
     app_initialized = true;
     return true;
@@ -366,6 +405,7 @@ bool DPLL_App_Stop(void)
     if (!app_initialized || !app_started) { return false; }
     bool output_ok = NCO_DAC_Stop(); /* 先停止共同主时钟，避免 DMA 停止期间继续触发。 */
     bool input_ok = app_config.port->ops->stop_input(app_config.port->context); /* 再撤销输入。 */
+    lock_windows = 0U;
     app_started = false;
     return output_ok && input_ok;
 }
@@ -526,6 +566,7 @@ bool DPLL_App_Enable(bool enable)
     }
 
     primask = DPLL_App_EnterCritical();
+    lock_windows = 0U;
     if (enable)
     {
         /* 先复位 PI 运行时状态并取快照，再依次移交闭环写入权与当前 FCW；
@@ -656,6 +697,7 @@ bool DPLL_App_SetLockedPhaseDifferenceDegrees(
     success = DPLL_PI_SetTargetPhase(&dpll_pi_state, target_phase_rad);
     if (success)
     {
+        if (locked_phase_difference_deg != output_minus_input_phase_deg) { lock_windows = 0U; }
         locked_phase_difference_deg = output_minus_input_phase_deg;
     }
     DPLL_App_ExitCritical(primask);
@@ -757,6 +799,7 @@ static void DPLL_App_ProcessInput(void *context, const uint16_t *samples,
     IQ_PhaseAccumulationStatus iq_status = IQ_PHASE_ACCUMULATION_ERROR;
     bool reference_match;
     bool pi_input_ready = false;
+    bool applied = false; /* 本窗口的控制字已被 NCO 接收。 */
 
     (void)context;
     if (!app_initialized || samples == NULL || count != ADC_DMA_BLOCK_SAMPLES)
@@ -827,7 +870,7 @@ static void DPLL_App_ProcessInput(void *context, const uint16_t *samples,
                        &output_frequency_control_word))
     {
         /* PI 产生了新 FCW：回写 NCO 闭环（仅闭环使能时会被接受）。 */
-        (void)NCO_DAC_SetClosedLoopFrequencyControlWord(
+        applied = NCO_DAC_SetClosedLoopFrequencyControlWord(
             output_frequency_control_word);
     }
 
@@ -835,6 +878,12 @@ static void DPLL_App_ProcessInput(void *context, const uint16_t *samples,
     snapshot = DPLL_PI_GetSnapshot(&dpll_pi_state);
     if (snapshot != NULL)
     {
+        if (iq_status != IQ_PHASE_ACCUMULATION_IN_PROGRESS)
+        {
+            const uint32_t token = DPLL_App_EnterCritical(); /* 保护与 DMA 错误共享的锁定计数。 */
+            DPLL_App_UpdateLock(snapshot, applied);
+            DPLL_App_ExitCritical(token);
+        }
         /* 奇偶值让调试器能检测到被中断的结构体读取。 */
         g_dpll_snapshot_sequence++;
         SignalPort_MemoryBarrier(app_config.port);
@@ -862,6 +911,7 @@ static void DPLL_App_OnStreamError(void *context, SignalError error, uint32_t co
 {
     (void)context;
     if (!app_initialized) { return; }
+    lock_windows = 0U;
     if (error == SIGNAL_ERROR_INPUT)
     {
         g_adc_error_count++;
