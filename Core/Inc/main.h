@@ -61,8 +61,6 @@ void Error_Handler(void);
 #define Small_Key_GPIO_Port GPIOC
 #define LED_Pin GPIO_PIN_0
 #define LED_GPIO_Port GPIOB
-#define Big_Key_Pin GPIO_PIN_8
-#define Big_Key_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

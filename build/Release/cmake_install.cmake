@@ -47,6 +47,31 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface/STM32G4/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/myMiddleware/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/App/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/BSP/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

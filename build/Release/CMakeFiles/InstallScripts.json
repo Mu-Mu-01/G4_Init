@@ -4,7 +4,12 @@
 		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake_install.cmake",
 		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake/stm32cubemx/cmake_install.cmake",
 		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/cmake_install.cmake",
-		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/Source/cmake_install.cmake"
+		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/Source/cmake_install.cmake",
+		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface/cmake_install.cmake",
+		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface/STM32G4/cmake_install.cmake",
+		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/myMiddleware/cmake_install.cmake",
+		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/App/cmake_install.cmake",
+		"C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/BSP/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

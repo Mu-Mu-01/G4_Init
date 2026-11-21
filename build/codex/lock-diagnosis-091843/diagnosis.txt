@@ -1,0 +1,8 @@
+STM32G474，ST-LINK Hot Plug，只读采集。
+板上 Flash 的前 40980 字节与采集时的 Debug.bin 逐字节相同。
+程序镜像 SHA-256: 3d454f435d0dbe7a1c8acf5496960cca3ed8f9409917f8b44480ef88674230fc
+app_started=1；连续两次 g_adc_blocks_processed=0，g_dpll_snapshot_sequence=0。
+ADC 环内 1024 个半字均为零；DMA1_Channel1 CNDTR=1024。
+TIM1 CR1=1，SMCR=0x100047 (External1 / ITR8)，CNT=0，ARR=7，SR=0。
+TIM8 CR1=1，CR2=0x20，CNT=43，ARR=212；DAC DMA CNDTR=1857。
+RM0440 Rev 9 页 1148 表 267：TIM1 的 ITR5=TIM8_TRGO，ITR8=TIM17_OC1。

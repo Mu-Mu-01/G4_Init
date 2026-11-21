@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "plan_id": "51a04a2a2f504f8d8d2858b24fe69700",
+  "created_unix": 1795229868.1738355,
+  "artifact": "C:\\Users\\Rui\\OneDrive\\Project\\G4\\EPI_cnt5_2026.11.21\\build\\Release\\EPI_cnt5_2026.11.21.elf",
+  "artifact_sha256": "744491485485a627ff689b1933abbeb94bb9d40281d0db8dc89b9ec79c9a9ca2",
+  "artifact_size": 92504,
+  "target": "STM32G474CBT6",
+  "probe": "stlink",
+  "address": null,
+  "status": "executed",
+  "operations": [
+    "connect_swd",
+    "program",
+    "verify",
+    "reset"
+  ],
+  "forbidden_operations": [
+    "mass_erase",
+    "option_bytes"
+  ],
+  "executed_unix": 1795229894.0856352,
+  "returncode": 0
+}

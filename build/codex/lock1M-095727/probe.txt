@@ -1,0 +1,75 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.20.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 000000000000000000000000
+ST-LINK FW  : V2J37M26
+Board       : --
+Voltage     : 3.34V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x469
+Revision ID : Rev X
+Device name : STM32G47x/G48x/G414
+Flash size  : 128 KBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0xD5
+Debug in Low Power mode enabled
+
+
+UPLOADING ...
+  File          : build/codex/lock1M-095727/flash.bin
+  Size          : 49152 Bytes
+  Address:      : 0x8000000
+Read progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:00.267
+
+UPLOADING ...
+  File          : build/codex/lock1M-095727/ram.bin
+  Size          : 57344 Bytes
+  Address:      : 0x20000000
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:00.300
+
+UPLOADING ...
+  File          : build/codex/lock1M-095727/t1.bin
+  Size          : 56 Bytes
+  Address:      : 0x40012C00
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:00.000
+
+UPLOADING ...
+  File          : build/codex/lock1M-095727/t8.bin
+  Size          : 56 Bytes
+  Address:      : 0x40013400
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:00.000
+
+UPLOADING ...
+  File          : build/codex/lock1M-095727/dma.bin
+  Size          : 56 Bytes
+  Address:      : 0x40020000
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:00.001

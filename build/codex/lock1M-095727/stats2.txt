@@ -1,0 +1,31 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.20.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 000000000000000000000000
+ST-LINK FW  : V2J37M26
+Board       : --
+Voltage     : 3.35V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x469
+Revision ID : Rev X
+Device name : STM32G47x/G48x/G414
+Flash size  : 128 KBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0xD5
+Debug in Low Power mode enabled
+
+
+UPLOADING ...
+  File          : build/codex/lock1M-095727/stats2.bin
+  Size          : 144 Bytes
+  Address:      : 0x20008AE8
+Read progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:00.001

@@ -47,14 +47,14 @@ cmake_ninja_workdir = C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/buil
 #############################################
 # Order-only phony target for EPI_cnt5_2026.11.21
 
-build cmake_object_order_depends_target_EPI_cnt5_2026.11.21: phony || cmake_object_order_depends_target_CMSISDSP cmake_object_order_depends_target_STM32_Drivers
+build cmake_object_order_depends_target_EPI_cnt5_2026.11.21: phony || cmake_object_order_depends_target_CMSISDSP cmake_object_order_depends_target_STM32_Drivers cmake_object_order_depends_target_dpll_algorithms cmake_object_order_depends_target_dpll_app cmake_object_order_depends_target_dpll_bsp cmake_object_order_depends_target_dpll_nco cmake_object_order_depends_target_dpll_timer_frequency cmake_object_order_depends_target_signal_port_stm32g4
 
 build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/main.c.obj: C_COMPILER__EPI_cnt5_2026.2e11.2e21_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Core/Src/main.c || cmake_object_order_depends_target_EPI_cnt5_2026.11.21
   CONFIG = Release
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\main.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -63,7 +63,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/gpio.c.obj: C_COMPILER__EPI_cn
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\gpio.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -72,7 +72,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/adc.c.obj: C_COMPILER__EPI_cnt
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\adc.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -81,7 +81,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/dac.c.obj: C_COMPILER__EPI_cnt
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\dac.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -90,7 +90,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/dma.c.obj: C_COMPILER__EPI_cnt
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\dma.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -99,7 +99,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/tim.c.obj: C_COMPILER__EPI_cnt
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\tim.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -108,7 +108,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/stm32g4xx_it.c.obj: C_COMPILER
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\stm32g4xx_it.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -117,7 +117,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/stm32g4xx_hal_msp.c.obj: C_COM
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\stm32g4xx_hal_msp.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -126,7 +126,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/sysmem.c.obj: C_COMPILER__EPI_
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\sysmem.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -135,7 +135,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/syscalls.c.obj: C_COMPILER__EP
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src\syscalls.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir\Core\Src
 
@@ -144,7 +144,7 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/startup_stm32g474xx.s.obj: ASM_COMPILER
   DEFINES = -DDISABLEFLOAT16 -DSTM32G474xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\EPI_cnt5_2026.11.21.dir\startup_stm32g474xx.s.obj.d
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -x assembler-with-cpp -MMD -MP -O3 -DNDEBUG
-  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   OBJECT_FILE_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
 
@@ -156,11 +156,11 @@ build CMakeFiles/EPI_cnt5_2026.11.21.dir/startup_stm32g474xx.s.obj: ASM_COMPILER
 #############################################
 # Link the executable EPI_cnt5_2026.11.21.elf
 
-build EPI_cnt5_2026.11.21.elf: C_EXECUTABLE_LINKER__EPI_cnt5_2026.2e11.2e21_Release cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/main.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/gpio.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/adc.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/dac.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/dma.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/tim.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/stm32g4xx_it.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/stm32g4xx_hal_msp.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/sysmem.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/syscalls.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/startup_stm32g474xx.s.obj | cmsis-dsp/Source/libCMSISDSP.a || cmake/stm32cubemx/STM32_Drivers cmsis-dsp/Source/libCMSISDSP.a
+build EPI_cnt5_2026.11.21.elf: C_EXECUTABLE_LINKER__EPI_cnt5_2026.2e11.2e21_Release cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/main.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/gpio.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/adc.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/dac.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/dma.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/tim.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/stm32g4xx_it.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/stm32g4xx_hal_msp.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/sysmem.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/Core/Src/syscalls.c.obj CMakeFiles/EPI_cnt5_2026.11.21.dir/startup_stm32g474xx.s.obj | cmsis-dsp/Source/libCMSISDSP.a BSP/libdpll_bsp.a App/libdpll_app.a Interface/STM32G4/libsignal_port_stm32g4.a Interface/STM32G4/libdpll_timer_frequency.a myMiddleware/libdpll_nco.a myMiddleware/libdpll_algorithms.a cmsis-dsp/Source/libCMSISDSP.a || App/libdpll_app.a BSP/libdpll_bsp.a Interface/STM32G4/libdpll_timer_frequency.a Interface/STM32G4/libsignal_port_stm32g4.a cmake/stm32cubemx/STM32_Drivers cmsis-dsp/Source/libCMSISDSP.a myMiddleware/libdpll_algorithms.a myMiddleware/libdpll_nco.a
   CONFIG = Release
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0
   LINK_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -T "C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/STM32G474XX_FLASH.ld" --specs=nano.specs -Wl,-Map=EPI_cnt5_2026.11.21.map -Wl,--gc-sections -Wl,--print-memory-usage
-  LINK_LIBRARIES = -lm  cmsis-dsp/Source/libCMSISDSP.a  -lm
+  LINK_LIBRARIES = -lm  cmsis-dsp/Source/libCMSISDSP.a  BSP/libdpll_bsp.a  App/libdpll_app.a  Interface/STM32G4/libsignal_port_stm32g4.a  Interface/STM32G4/libdpll_timer_frequency.a  myMiddleware/libdpll_nco.a  myMiddleware/libdpll_algorithms.a  cmsis-dsp/Source/libCMSISDSP.a  -lm
   OBJECT_DIR = CMakeFiles\EPI_cnt5_2026.11.21.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -5160,6 +5160,398 @@ build cmsis-dsp/Source/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build cmsis-dsp/Source/rebuild_cache: phony cmsis-dsp/Source/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build Interface/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\Interface && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Interface/edit_cache: phony Interface/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Interface/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\Interface && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21 -BC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Interface/rebuild_cache: phony Interface/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target dpll_timer_frequency
+
+
+#############################################
+# Order-only phony target for dpll_timer_frequency
+
+build cmake_object_order_depends_target_dpll_timer_frequency: phony || .
+
+build Interface/STM32G4/CMakeFiles/dpll_timer_frequency.dir/__/__/myDrivers/Src/timer_frequency.c.obj: C_COMPILER__dpll_timer_frequency_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myDrivers/Src/timer_frequency.c || cmake_object_order_depends_target_dpll_timer_frequency
+  CONFIG = Release
+  DEP_FILE = Interface\STM32G4\CMakeFiles\dpll_timer_frequency.dir\__\__\myDrivers\Src\timer_frequency.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myDrivers/Inc
+  OBJECT_DIR = Interface\STM32G4\CMakeFiles\dpll_timer_frequency.dir
+  OBJECT_FILE_DIR = Interface\STM32G4\CMakeFiles\dpll_timer_frequency.dir\__\__\myDrivers\Src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target dpll_timer_frequency
+
+
+#############################################
+# Link the static library Interface\STM32G4\libdpll_timer_frequency.a
+
+build Interface/STM32G4/libdpll_timer_frequency.a: C_STATIC_LIBRARY_LINKER__dpll_timer_frequency_Release Interface/STM32G4/CMakeFiles/dpll_timer_frequency.dir/__/__/myDrivers/Src/timer_frequency.c.obj
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0
+  OBJECT_DIR = Interface\STM32G4\CMakeFiles\dpll_timer_frequency.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Interface\STM32G4\libdpll_timer_frequency.a
+  TARGET_PDB = dpll_timer_frequency.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target signal_port_stm32g4
+
+
+#############################################
+# Order-only phony target for signal_port_stm32g4
+
+build cmake_object_order_depends_target_signal_port_stm32g4: phony || cmake_object_order_depends_target_dpll_timer_frequency
+
+build Interface/STM32G4/CMakeFiles/signal_port_stm32g4.dir/Src/signal_port_stm32g4.c.obj: C_COMPILER__signal_port_stm32g4_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/STM32G4/Src/signal_port_stm32g4.c || cmake_object_order_depends_target_signal_port_stm32g4
+  CONFIG = Release
+  DEFINES = -DSTM32G474xx -DUSE_HAL_DRIVER
+  DEP_FILE = Interface\STM32G4\CMakeFiles\signal_port_stm32g4.dir\Src\signal_port_stm32g4.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/STM32G4/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myDrivers/Inc
+  OBJECT_DIR = Interface\STM32G4\CMakeFiles\signal_port_stm32g4.dir
+  OBJECT_FILE_DIR = Interface\STM32G4\CMakeFiles\signal_port_stm32g4.dir\Src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target signal_port_stm32g4
+
+
+#############################################
+# Link the static library Interface\STM32G4\libsignal_port_stm32g4.a
+
+build Interface/STM32G4/libsignal_port_stm32g4.a: C_STATIC_LIBRARY_LINKER__signal_port_stm32g4_Release Interface/STM32G4/CMakeFiles/signal_port_stm32g4.dir/Src/signal_port_stm32g4.c.obj || Interface/STM32G4/libdpll_timer_frequency.a
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0
+  OBJECT_DIR = Interface\STM32G4\CMakeFiles\signal_port_stm32g4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Interface\STM32G4\libsignal_port_stm32g4.a
+  TARGET_PDB = signal_port_stm32g4.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Interface/STM32G4/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\Interface\STM32G4 && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Interface/STM32G4/edit_cache: phony Interface/STM32G4/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Interface/STM32G4/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\Interface\STM32G4 && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21 -BC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Interface/STM32G4/rebuild_cache: phony Interface/STM32G4/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target dpll_algorithms
+
+
+#############################################
+# Order-only phony target for dpll_algorithms
+
+build cmake_object_order_depends_target_dpll_algorithms: phony || cmake_object_order_depends_target_CMSISDSP
+
+build myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/dpll_pi.c.obj: C_COMPILER__dpll_algorithms_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Src/dpll_pi.c || cmake_object_order_depends_target_dpll_algorithms
+  CONFIG = Release
+  DEFINES = -DDISABLEFLOAT16 -DIQ_PHASE_USE_CMSIS_DSP=1
+  DEP_FILE = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src\dpll_pi.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -O3
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir
+  OBJECT_FILE_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src
+
+build myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/dpll_phase_calibration.c.obj: C_COMPILER__dpll_algorithms_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Src/dpll_phase_calibration.c || cmake_object_order_depends_target_dpll_algorithms
+  CONFIG = Release
+  DEFINES = -DDISABLEFLOAT16 -DIQ_PHASE_USE_CMSIS_DSP=1
+  DEP_FILE = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src\dpll_phase_calibration.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -O3
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir
+  OBJECT_FILE_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src
+
+build myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/iq_phase.c.obj: C_COMPILER__dpll_algorithms_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Src/iq_phase.c || cmake_object_order_depends_target_dpll_algorithms
+  CONFIG = Release
+  DEFINES = -DDISABLEFLOAT16 -DIQ_PHASE_USE_CMSIS_DSP=1
+  DEP_FILE = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src\iq_phase.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -O3
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir
+  OBJECT_FILE_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src
+
+build myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/nco_frequency_multiplier.c.obj: C_COMPILER__dpll_algorithms_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Src/nco_frequency_multiplier.c || cmake_object_order_depends_target_dpll_algorithms
+  CONFIG = Release
+  DEFINES = -DDISABLEFLOAT16 -DIQ_PHASE_USE_CMSIS_DSP=1
+  DEP_FILE = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src\nco_frequency_multiplier.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -O3
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir
+  OBJECT_FILE_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src
+
+build myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/nco_phase_interp.c.obj: C_COMPILER__dpll_algorithms_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Src/nco_phase_interp.c || cmake_object_order_depends_target_dpll_algorithms
+  CONFIG = Release
+  DEFINES = -DDISABLEFLOAT16 -DIQ_PHASE_USE_CMSIS_DSP=1
+  DEP_FILE = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src\nco_phase_interp.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -O3
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir
+  OBJECT_FILE_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src
+
+build myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/nco_waveform.c.obj: C_COMPILER__dpll_algorithms_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Src/nco_waveform.c || cmake_object_order_depends_target_dpll_algorithms
+  CONFIG = Release
+  DEFINES = -DDISABLEFLOAT16 -DIQ_PHASE_USE_CMSIS_DSP=1
+  DEP_FILE = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src\nco_waveform.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -O3
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/../Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Drivers/CMSIS/Include
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir
+  OBJECT_FILE_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir\Src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target dpll_algorithms
+
+
+#############################################
+# Link the static library myMiddleware\libdpll_algorithms.a
+
+build myMiddleware/libdpll_algorithms.a: C_STATIC_LIBRARY_LINKER__dpll_algorithms_Release myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/dpll_pi.c.obj myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/dpll_phase_calibration.c.obj myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/iq_phase.c.obj myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/nco_frequency_multiplier.c.obj myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/nco_phase_interp.c.obj myMiddleware/CMakeFiles/dpll_algorithms.dir/Src/nco_waveform.c.obj || cmsis-dsp/Source/libCMSISDSP.a
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_algorithms.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = myMiddleware\libdpll_algorithms.a
+  TARGET_PDB = dpll_algorithms.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target dpll_nco
+
+
+#############################################
+# Order-only phony target for dpll_nco
+
+build cmake_object_order_depends_target_dpll_nco: phony || cmake_object_order_depends_target_CMSISDSP cmake_object_order_depends_target_dpll_algorithms
+
+build myMiddleware/CMakeFiles/dpll_nco.dir/Src/nco_dac.c.obj: C_COMPILER__dpll_nco_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Src/nco_dac.c || cmake_object_order_depends_target_dpll_nco
+  CONFIG = Release
+  DEP_FILE = myMiddleware\CMakeFiles\dpll_nco.dir\Src\nco_dac.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -O3
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_nco.dir
+  OBJECT_FILE_DIR = myMiddleware\CMakeFiles\dpll_nco.dir\Src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target dpll_nco
+
+
+#############################################
+# Link the static library myMiddleware\libdpll_nco.a
+
+build myMiddleware/libdpll_nco.a: C_STATIC_LIBRARY_LINKER__dpll_nco_Release myMiddleware/CMakeFiles/dpll_nco.dir/Src/nco_dac.c.obj || cmsis-dsp/Source/libCMSISDSP.a myMiddleware/libdpll_algorithms.a
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0
+  OBJECT_DIR = myMiddleware\CMakeFiles\dpll_nco.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = myMiddleware\libdpll_nco.a
+  TARGET_PDB = dpll_nco.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build myMiddleware/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\myMiddleware && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build myMiddleware/edit_cache: phony myMiddleware/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build myMiddleware/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\myMiddleware && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21 -BC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build myMiddleware/rebuild_cache: phony myMiddleware/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target dpll_app
+
+
+#############################################
+# Order-only phony target for dpll_app
+
+build cmake_object_order_depends_target_dpll_app: phony || cmake_object_order_depends_target_CMSISDSP cmake_object_order_depends_target_dpll_algorithms cmake_object_order_depends_target_dpll_nco
+
+build App/CMakeFiles/dpll_app.dir/Src/dpll_app.c.obj: C_COMPILER__dpll_app_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Src/dpll_app.c || cmake_object_order_depends_target_dpll_app
+  CONFIG = Release
+  DEP_FILE = App\CMakeFiles\dpll_app.dir\Src\dpll_app.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc
+  OBJECT_DIR = App\CMakeFiles\dpll_app.dir
+  OBJECT_FILE_DIR = App\CMakeFiles\dpll_app.dir\Src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target dpll_app
+
+
+#############################################
+# Link the static library App\libdpll_app.a
+
+build App/libdpll_app.a: C_STATIC_LIBRARY_LINKER__dpll_app_Release App/CMakeFiles/dpll_app.dir/Src/dpll_app.c.obj || cmsis-dsp/Source/libCMSISDSP.a myMiddleware/libdpll_algorithms.a myMiddleware/libdpll_nco.a
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0
+  OBJECT_DIR = App\CMakeFiles\dpll_app.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = App\libdpll_app.a
+  TARGET_PDB = dpll_app.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build App/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\App && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build App/edit_cache: phony App/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build App/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\App && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21 -BC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build App/rebuild_cache: phony App/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target dpll_bsp
+
+
+#############################################
+# Order-only phony target for dpll_bsp
+
+build cmake_object_order_depends_target_dpll_bsp: phony || cmake_object_order_depends_target_dpll_timer_frequency cmake_object_order_depends_target_signal_port_stm32g4
+
+build BSP/CMakeFiles/dpll_bsp.dir/Src/bsp_signal_stm32g4.c.obj: C_COMPILER__dpll_bsp_unscanned_Release C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Src/bsp_signal_stm32g4.c || cmake_object_order_depends_target_dpll_bsp
+  CONFIG = Release
+  DEFINES = -DSTM32G474xx -DUSE_HAL_DRIVER
+  DEP_FILE = BSP\CMakeFiles\dpll_bsp.dir\Src\bsp_signal_stm32g4.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/STM32G4/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Core/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = BSP\CMakeFiles\dpll_bsp.dir
+  OBJECT_FILE_DIR = BSP\CMakeFiles\dpll_bsp.dir\Src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target dpll_bsp
+
+
+#############################################
+# Link the static library BSP\libdpll_bsp.a
+
+build BSP/libdpll_bsp.a: C_STATIC_LIBRARY_LINKER__dpll_bsp_Release BSP/CMakeFiles/dpll_bsp.dir/Src/bsp_signal_stm32g4.c.obj || Interface/STM32G4/libdpll_timer_frequency.a Interface/STM32G4/libsignal_port_stm32g4.a
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -fdata-sections -ffunction-sections -Os -g0
+  OBJECT_DIR = BSP\CMakeFiles\dpll_bsp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = BSP\libdpll_bsp.a
+  TARGET_PDB = dpll_bsp.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build BSP/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\BSP && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build BSP/edit_cache: phony BSP/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build BSP/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release\BSP && "F:\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21 -BC:\Users\Rui\OneDrive\Project\G4\EPI_cnt5_2026.11.21\build\Release"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build BSP/rebuild_cache: phony BSP/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build CMSISDSP: phony cmsis-dsp/Source/libCMSISDSP.a
@@ -5168,7 +5560,31 @@ build EPI_cnt5_2026.11.21: phony EPI_cnt5_2026.11.21.elf
 
 build STM32_Drivers: phony cmake/stm32cubemx/STM32_Drivers
 
+build dpll_algorithms: phony myMiddleware/libdpll_algorithms.a
+
+build dpll_app: phony App/libdpll_app.a
+
+build dpll_bsp: phony BSP/libdpll_bsp.a
+
+build dpll_nco: phony myMiddleware/libdpll_nco.a
+
+build dpll_timer_frequency: phony Interface/STM32G4/libdpll_timer_frequency.a
+
 build libCMSISDSP.a: phony cmsis-dsp/Source/libCMSISDSP.a
+
+build libdpll_algorithms.a: phony myMiddleware/libdpll_algorithms.a
+
+build libdpll_app.a: phony App/libdpll_app.a
+
+build libdpll_bsp.a: phony BSP/libdpll_bsp.a
+
+build libdpll_nco.a: phony myMiddleware/libdpll_nco.a
+
+build libdpll_timer_frequency.a: phony Interface/STM32G4/libdpll_timer_frequency.a
+
+build libsignal_port_stm32g4.a: phony Interface/STM32G4/libsignal_port_stm32g4.a
+
+build signal_port_stm32g4: phony Interface/STM32G4/libsignal_port_stm32g4.a
 
 # =============================================================================
 # Folder targets.
@@ -5178,7 +5594,35 @@ build libCMSISDSP.a: phony cmsis-dsp/Source/libCMSISDSP.a
 #############################################
 # Folder: C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release
 
-build all: phony EPI_cnt5_2026.11.21.elf cmake/stm32cubemx/all cmsis-dsp/all
+build all: phony EPI_cnt5_2026.11.21.elf cmake/stm32cubemx/all cmsis-dsp/all Interface/all Interface/STM32G4/all myMiddleware/all App/all BSP/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/App
+
+build App/all: phony App/libdpll_app.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/BSP
+
+build BSP/all: phony BSP/libdpll_bsp.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface
+
+build Interface/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface/STM32G4
+
+build Interface/STM32G4/all: phony Interface/STM32G4/libdpll_timer_frequency.a Interface/STM32G4/libsignal_port_stm32g4.a
 
 # =============================================================================
 
@@ -5202,20 +5646,27 @@ build cmsis-dsp/all: phony cmsis-dsp/Source/all
 build cmsis-dsp/Source/all: phony cmsis-dsp/Source/libCMSISDSP.a
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/myMiddleware
+
+build myMiddleware/all: phony myMiddleware/libdpll_algorithms.a myMiddleware/libdpll_nco.a
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake/stm32cubemx/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/Source/cmake_install.cmake: RERUN_CMAKE | C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BasicMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BayesFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CommonTables/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ComplexMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ControllerFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/DistanceFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FastMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FilteringFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/InterpolationFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/MatrixFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/QuaternionMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SVMFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/StatisticsFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SupportFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/TransformFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/WindowFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/configDsp.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/gcc-arm-none-eabi.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeASMCompiler.cmake CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeASMInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-ASM.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeASMLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Generic.cmake
+build build.ninja C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmake/stm32cubemx/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/cmsis-dsp/Source/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/Interface/STM32G4/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/myMiddleware/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/App/cmake_install.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/build/Release/BSP/cmake_install.cmake: RERUN_CMAKE | C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BasicMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BayesFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CommonTables/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ComplexMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ControllerFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/DistanceFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FastMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FilteringFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/InterpolationFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/MatrixFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/QuaternionMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SVMFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/StatisticsFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SupportFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/TransformFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/WindowFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/configDsp.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/STM32G4/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/gcc-arm-none-eabi.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeASMCompiler.cmake CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeASMInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-ASM.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeASMLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Generic.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BasicMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BayesFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CommonTables/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ComplexMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ControllerFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/DistanceFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FastMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FilteringFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/InterpolationFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/MatrixFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/QuaternionMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SVMFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/StatisticsFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SupportFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/TransformFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/WindowFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/configDsp.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/gcc-arm-none-eabi.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeASMCompiler.cmake CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeASMInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-ASM.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeASMLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Generic.cmake: phony
+build C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BasicMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/BayesFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/CommonTables/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ComplexMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/ControllerFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/DistanceFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FastMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/FilteringFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/InterpolationFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/MatrixFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/QuaternionMathFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SVMFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/StatisticsFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/SupportFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/TransformFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/WindowFunctions/Config.cmake C$:/Users/Rui/OneDrive/Project/CMSIS-DSP-main/Source/configDsp.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/App/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/BSP/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/Interface/STM32G4/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/gcc-arm-none-eabi.cmake C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/cmake/stm32cubemx/CMakeLists.txt C$:/Users/Rui/OneDrive/Project/G4/EPI_cnt5_2026.11.21/myMiddleware/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeASMCompiler.cmake CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeASMInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-ASM.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeASMLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake F$:/CLion$ 2025.3.2/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Generic.cmake: phony
 
 
 #############################################

@@ -54,6 +54,19 @@ if(TOOLCHAIN_LINK_LIBRARIES)
     target_link_libraries(CMSISDSP PRIVATE ${TOOLCHAIN_LINK_LIBRARIES})
 endif()
 
+# 板级资源、平台接口和 DPLL 应用分别构建，G4 只选择本平台的实现。
+add_subdirectory(Interface)
+add_subdirectory(Interface/STM32G4)
+add_subdirectory(myMiddleware)
+add_subdirectory(App)
+add_subdirectory(BSP)
+
+# G4 的 IQ 鉴相使用 CMSIS-DSP 定点正弦表；DMA 中断内的两条热点优先优化速度。
+target_compile_definitions(dpll_algorithms PRIVATE IQ_PHASE_USE_CMSIS_DSP=1)
+target_link_libraries(dpll_algorithms PRIVATE CMSISDSP)
+target_compile_options(dpll_algorithms PRIVATE -O3)
+target_compile_options(dpll_nco PRIVATE -O3)
+
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
@@ -81,6 +94,8 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
     CMSISDSP
+    dpll_bsp
+    dpll_app
 
     # Add user defined libraries
 )
